@@ -1,0 +1,22 @@
+```json
+{
+  "scene": {
+    "time_of_day": "golden_hour",
+    "style": "vivid",
+    "objects": [
+      {"id": "tree1", "category": "tree", "prompt": "gnarled oak tree", "box": [0.3, 0.5, 0.2, 0.8]},
+      {"id": "bike1", "category": "bicycle", "prompt": "vintage red bicycle", "box": [0.45, 0.7, 0.15, 0.4], "anchor": "tree1"},
+      {"id": "dog1", "category": "animal", "prompt": "golden retriever running", "box": [0.6, 0.2, 0.3, 0.5]},
+      {"id": "bench1", "category": "furniture", "prompt": "wooden bench", "box": [0.7, 0.4, 0.2, 0.3]}
+    ],
+    "relations": [
+      {"subject": "bike1", "predicate": "leaning_on", "object": "tree1"},
+      {"subject": "dog1", "predicate": "near", "object": "bench1"}
+    ]
+  },
+  "paved_path": {
+    "box": [0.2, 0.9, 0.8, 0.01]
+  }
+}
+```
+
